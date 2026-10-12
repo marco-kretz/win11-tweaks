@@ -11,6 +11,8 @@ winget configure test -f configuration.winget   # show what differs, changes not
 winget configure -f configuration.winget        # apply (one UAC prompt for HKLM values)
 ```
 
+What each value does: [docs/registry-tweaks.md](docs/registry-tweaks.md).
+
 Some changes need a sign-out, restart or Explorer restart. Values under `...\Policies\...` make Settings show "managed by your organization".
 
 To disable a tweak, comment out its block. That only stops applying it; to revert an already applied value, delete it (or set the Windows default) by hand, e.g.:
